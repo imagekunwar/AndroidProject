@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg">
 
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/edt_username"
+        android:src="@drawable/ommamata"
+        />
 
     <EditText
         android:id="@+id/edt_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background=""
+        android:background="@drawable/round"
         android:layout_margin="20dp"
         android:layout_centerVertical="true"
         android:inputType="textEmailAddress"
@@ -22,7 +31,7 @@
         android:id="@+id/edt_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background=""
+        android:background="@drawable/round"
         android:inputType="textPassword"
         android:layout_margin="20dp"
         android:padding="11dp"
@@ -32,13 +41,14 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="150dp"
-        android:padding="6dp"
-        android:hint="login"
         android:layout_below="@id/edt_password"
-        />
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:hint="login"
+        android:background="@color/cream"
+        android:padding="6dp" />
 
 
 
